@@ -27,7 +27,8 @@ soc-home-lab/ ├── setup/ # Azure onboarding + connector guides ├── p
 2. ✅ Connect Windows machines using Azure Monitor Agent (AMA)  
 3. ✅ Verify data flow via `SecurityEvent` table  
 4. ✅ Deploy custom analytics rules from `playbooks/`  
-5. ✅ Integrate external threat intelligence feeds (`ti_feeds/`)  
+5. ✅ Integrate external threat intelligence feeds (`ti_feeds/`)  ![Screenshot 2025-04-08 092257](https://github.com/user-attachments/assets/699eeb32-bd13-4b33-ad7f-2dea69407bce)
+
 
 ---
 
@@ -45,4 +46,3 @@ SecurityEvent
 
 
 
-![Image Description](https://github.com/user-attachments/assets/52efbfa0-704d-434a-b9c5-d0d7c3251752)
