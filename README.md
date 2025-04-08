@@ -42,3 +42,7 @@ SecurityEvent
 | summarize FailedCount = count(), Accounts = make_set(TargetUserName)
     by IpAddress = tostring(IpAddress), bin(TimeGenerated, 1h)
 | where FailedCount > 1
+
+
+
+![Image](https://github.com/user-attachments/assets/a498d6c2-b022-4dbb-815b-055ffd60f681)
