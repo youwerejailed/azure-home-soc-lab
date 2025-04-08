@@ -20,6 +20,7 @@ This project demonstrates how to build a cloud-based Security Operations Center 
 soc-home-lab/ ├── setup/ # Azure onboarding + connector guides ├── playbooks/ # KQL-based detection rules ├── ti_feeds/ # Custom threat intel integrations ├── logs/ # Example raw logs (ignored) ├── architecture.png # System diagram └── README.md
 
 
+![Screenshot 2025-04-08 092257](https://github.com/user-attachments/assets/3c690b51-c911-42de-9aac-238c50ae2676)
 
 ## ⚙️ Setup Steps
 
@@ -43,7 +44,7 @@ SecurityEvent
 | summarize FailedCount = count(), Accounts = make_set(TargetUserName)
     by IpAddress = tostring(IpAddress), bin(TimeGenerated, 1h)
 | where FailedCount > 1
-![Screenshot 2025-04-08 092257](https://github.com/user-attachments/assets/1c62cac8-e2a2-4f7a-a047-97400e443a3d)
+
 
 
 
