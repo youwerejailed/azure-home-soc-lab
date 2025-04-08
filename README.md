@@ -28,7 +28,27 @@ soc-home-lab/ ├── setup/ # Azure onboarding + connector guides ├── p
 2. ✅ Connect Windows machines using Azure Monitor Agent (AMA)  
 3. ✅ Verify data flow via `SecurityEvent` table  
 4. ✅ Deploy custom analytics rules from `playbooks/`  
-5. ✅ Integrate external threat intelligence feeds (`ti_feeds/`)  
+5. ✅ Integrate external threat intelligence feeds (`ti_feeds/`)
+
+
+Open Ports
+In the lab environment, some inbound ports, specifically the following ports, have been deliberately left open, which results in the system being vulnerable:
+
+Port 80 (HTTP)
+
+Port 22 (SSH)
+
+Port 443 (HTTPS)
+
+Port 3389 (RDP)
+
+The purpose of leaving these ports open is to conduct security tests and observe various attack scenarios. However, this means that the environment is potentially exposed to security risks.
+
+
+![Screenshot 2025-04-08 093839](https://github.com/user-attachments/assets/b1b82cdd-a154-459f-a311-5a3cb986edaf)
+
+
+
 
 
 ---
